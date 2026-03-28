@@ -1,9 +1,10 @@
 const CACHE_NAME = 'discipline-tracker-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/mother_motivation_serious.png'
+  './',
+  'index.html',
+  'manifest.json',
+  'mother_motivation_serious.png',
+  'favicon.svg'
 ];
 
 self.addEventListener('install', event => {
