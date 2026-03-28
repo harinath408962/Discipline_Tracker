@@ -57,7 +57,7 @@ function App() {
             <ScoreCircle score={data.score} />
             <div className="motivation-box">
               <div className="motivation-image">
-                <img src="/mother_motivation_serious.png" alt="Motivation" />
+                <img src="mother_motivation_serious.png" alt="Motivation" />
               </div>
               <div className="motivation-text">
                 <h2>Did you work hard enough today?</h2>
