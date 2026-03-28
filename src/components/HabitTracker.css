@@ -1,0 +1,94 @@
+.habit-tracker {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.add-habit {
+  display: flex;
+  gap: 8px;
+}
+
+.add-habit input {
+  flex: 1;
+}
+
+.add-btn {
+  width: 44px;
+  background: var(--bg-tertiary);
+  color: var(--accent-gold);
+  font-size: 1.5rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.habits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.habit-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: var(--bg-primary);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  transition: var(--transition-smooth);
+}
+
+.habit-item.done {
+  opacity: 0.6;
+}
+
+.habit-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--accent-gold);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.habit-item.done .habit-checkbox {
+  background: var(--accent-gold);
+}
+
+.check {
+  font-size: 0.8rem;
+  color: var(--bg-primary);
+  font-weight: 800;
+}
+
+.habit-name {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.habit-item.done .habit-name {
+  text-decoration: line-through;
+}
+
+.del-btn {
+  color: var(--text-tertiary);
+  font-size: 1.2rem;
+  padding: 0 4px;
+}
+
+.del-btn:hover {
+  color: var(--accent-red);
+}
+
+.empty-msg {
+  text-align: center;
+  color: var(--text-tertiary);
+  font-size: 0.85rem;
+  padding: 20px;
+}

@@ -1,0 +1,39 @@
+.daily-reflection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reflection-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.field textarea {
+  min-height: 80px;
+  resize: vertical;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  background: var(--bg-primary);
+}
+
+.completed-badge {
+  font-size: 0.8rem;
+  color: var(--accent-green);
+  text-align: center;
+  font-weight: 700;
+  margin-top: 10px;
+}

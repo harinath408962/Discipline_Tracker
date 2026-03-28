@@ -1,0 +1,123 @@
+.deep-work-tracker {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dw-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.live-indicator {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--accent-red);
+  letter-spacing: 0.1em;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; text-shadow: 0 0 10px var(--accent-red); }
+  50% { opacity: 0.4; text-shadow: none; }
+  100% { opacity: 1; text-shadow: 0 0 10px var(--accent-red); }
+}
+
+.timer-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 30px;
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.timer-display .time {
+  font-size: 3rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.current-tag {
+  font-size: 0.9rem;
+  color: var(--accent-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.tag-selector {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.tag-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+}
+
+.tag-btn.active {
+  background: var(--accent-gold);
+  color: var(--bg-primary);
+  border-color: var(--accent-gold);
+}
+
+.active-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+}
+
+.btn-start, .btn-stop, .btn-pause, .btn-resume {
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: var(--transition-smooth);
+}
+
+.btn-start {
+  width: 100%;
+  background: var(--accent-gold);
+  color: var(--bg-primary);
+}
+
+.btn-pause {
+  background: var(--bg-tertiary);
+  color: var(--accent-gold);
+  border: 1px solid var(--border-subtle);
+}
+
+.btn-resume {
+  background: var(--accent-gold);
+  color: var(--bg-primary);
+}
+
+.btn-stop {
+  background: var(--bg-primary);
+  color: var(--accent-red);
+  border: 1px solid var(--accent-red);
+}
+
+.stats-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.stats-footer strong {
+  color: var(--accent-gold);
+}

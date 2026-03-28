@@ -1,0 +1,51 @@
+.sleep-tracker {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sleep-inputs {
+  display: flex;
+  gap: 16px;
+}
+
+.input-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-field label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.sleep-result {
+  margin-top: 8px;
+  text-align: center;
+  padding: 12px;
+  background: var(--bg-primary);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+}
+
+.duration-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  color: var(--accent-gold);
+}
+
+.sleep-result .good {
+  font-size: 0.75rem;
+  color: var(--accent-green);
+  font-weight: 600;
+}
+
+.sleep-result .warning {
+  font-size: 0.75rem;
+  color: var(--accent-red);
+  font-weight: 600;
+}
